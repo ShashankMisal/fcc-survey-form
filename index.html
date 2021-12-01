@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description" class="description">
+            Student Interest Survey
+        </p>
+    </header>
+    <div id="main">
+        <form action="" id="survey-form" method="GET">
+
+            <div class="eachdiv">
+                <label for="name" id="name-label" class="lab">Name :</label>
+                <input type="text" id="name" class="inp" placeholder="Enter name" required>
+            </div>
+
+            <div class="eachdiv">
+                <label for="email" id="email-label" class="lab">Email :</label>
+                <input type="email" id="email" class="inp" placeholder="Enter your email" required>
+            </div>
+
+            <div class="eachdiv">
+                <label for="number" id="number-label" class="lab">Phone Number :</label>
+                <input type="number" id="number" class="inp" min="0" max="999999999" placeholder="Enter Phone NO"
+                    required maxlength="10">
+            </div>
+
+            <div class="eachdiv">
+                <label for="dropdown" class="lab">
+                    Current Year : </label>
+                <select name="" id="dropdown" class="inp">
+                    <option value="option1">FE</option>
+                    <option value="option2">SE</option>
+                    <option value="option3">TE</option>
+                    <option value="option3">BE</option>
+                </select>
+            </div>
+            <div class="eachdiv radiobtn">
+                <div>
+                    <label for="male" class="lab rd">Male: </label>
+                    <input type="radio" name="gender" id="male" value="male">
+                </div>
+
+                <div>
+                    <label for="female" class="lab rd">female: </label>
+                    <input type="radio" name="gender" id="female" value="female">
+                </div>
+
+                <div>
+                    <label for="other" class="lab rd">Other: </label>
+                    <input type="radio" name="gender" id="other" value="other">
+                </div>
+
+            </div>
+
+
+
+            <div class="eachdiv">
+                <label for="AI" class="lab">INTEREST:</label>
+                <div class="radiobtn">
+                    <div>
+                        <label for="AI" class="lab rd">AI</label>
+                        <input type="checkbox" name="AI" id="AI" value="AI">
+                    </div>
+                    <div>
+                        <label for="CP" class="lab rd">CP</label>
+                        <input type="checkbox" name="CP" id="CP" value="CP">
+                    </div>
+
+                    <div>
+                        <label for="Data-science" class="lab rd">Data-science</label>
+                        <input type="checkbox" name="DAta-science" id="Data-science" value="Data-science">
+                    </div>
+
+                </div>
+            </div>
+            <div class="eachdiv">
+                <label for="textarea" class="lab">Comments:</label>
+                <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="eachdiv">
+                <button id="submit" type="submit">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

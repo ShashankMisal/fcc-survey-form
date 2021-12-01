@@ -1,0 +1,124 @@
+body{
+    margin:0;
+    padding: 0;
+    font-size: 10px;
+    background-color: #b8cc8d;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow:  0 1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px rgba(0,0,0,0.12), 
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+    background-color: #47d020f2;
+}
+
+h1{
+    max-width: 100%;
+    margin: auto;
+    padding: 1.3rem;
+    flex: 1;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+p{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#main{
+    max-width: 40%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.eachdiv{
+    margin-bottom: 0.7rem;
+    margin-top: 1.5rem ;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: #47d020f2;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
+    0 2px 2px rgba(0,0,0,0.20), 
+    0 4px 4px rgba(0,0,0,0.15), 
+    0 8px 8px rgba(0,0,0,0.10),
+    0 16px 16px rgba(0,0,0,0.05);
+}
+
+.lab{
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0rem 0rem 0.5rem 0rem;
+    font-family: 'Acme', sans-serif;
+    font-style: normal;
+}
+
+.inp{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0rem 0rem 0.5rem 0rem;
+    background-color: #b8cc8d;
+}
+
+input{
+    border: 0;
+     box-shadow: 0 3px 3px rgba(0,0,0,0.2);   
+}
+
+.radiobtn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+.rd{
+    display: inline-block;
+}
+
+#textarea{
+    width: 100%;
+    background-color: #b8cc8d;
+}
+
+#submit{
+    width: 100%;
+    height: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    background-color: #b8cc8d;
+    border: none;
+    font-family: 'Fjalla One', sans-serif;
+     box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+    0 2px 2px rgba(0,0,0,0.11), 
+    0 4px 4px rgba(0,0,0,0.11), 
+    0 6px 8px rgba(0,0,0,0.11),
+    0 8px 16px rgba(0,0,0,0.11);
+}
+
+@media only screen and (max-width: 768px)
+{
+    #main{
+        max-width: 100%;
+        width: 90%;
+        padding: 0;
+    }
+
+    #eachdiv{
+        width: 100%;
+    }
+}
+
